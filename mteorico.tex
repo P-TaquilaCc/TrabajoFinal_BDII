@@ -1,0 +1,47 @@
+\section{MARCO TEORICO}
+\subsection{Concepto de Base de datos}
+- Es un conjunto de datos que pertenecen al mismo contexto, almacenados sistemáticamente para su uso posterior.\\
+- Conjunto de información relacionada que se encuentra agrupada o estructurada.
+
+\subsection{Características}
+- Independencia lógica y física de los datos.
+- Redundancia mínima.
+- Acceso concurrente por parte de múltiples usuarios.
+- Integridad de los datos.
+- Consultas complejas optimizadas.
+- Seguridad de acceso y auditoría.
+- Respaldo y recuperación.
+- Acceso a través de lenguajes de programación estándar. 
+
+\subsection{Sistema de Gestión de Base de Datos (SGBD)}
+Los Sistemas de Gestión de Base de Datos (en inglés DataBase Management System) son un tipo de software muy específico, dedicado a servir de interfaz entre la base de datos, el usuario y las aplicaciones que la utilizan. Se compone de un lenguaje de definición de datos, de un lenguaje de manipulación de datos y de un lenguaje de consulta.
+
+\subsection{Ventajas de las bases de datos}
+Control sobre la redundancia de datos: Los sistemas de ficheros almacenan varias copias de los mismos datos en ficheros distintos. Esto hace que se desperdicie espacio de almacenamiento, además de provocar la falta de consistencia de datos.\\
+
+Compartir datos: En los sistemas de ficheros, los ficheros pertenecen a las personas o a los departamentos que los utilizan. Pero en los sistemas de bases de datos, la base de datos pertenece a la empresa y puede ser compartida por todos los usuarios que estén autorizados.\\
+
+Mejora en la integridad de datos: La integridad de la base de datos se refiere a la validez y la consistencia de los datos almacenados. Normalmente, la integridad se expresa mediante restricciones o reglas que no se pueden violar. Estas restricciones se pueden aplicar tanto a los datos, como a sus relaciones, y es el SGBD quien se debe encargar de mantenerlas.
+
+\subsection{Tipos de Base de datos}
+SEGÚN LA VARIABILIDAD DE DATOS ALMACENADOS: \\
+- Estáticas: los datos que contiene son solo de lectura. Básicamente se utiliza para almacenar datos históricos.\\
+- Dinámicas: Puede realizarse operaciones sobre los datos que contiene, entre ellas: consulta, actualiacion, adición y eliminación.\\\\
+SEGUN EL CONTENIDO: \\
+- Bibliográficas: Su contenido es solo una representación de la fuente primaria.\\
+- Numéricas: Almacena datos numéricos.\\
+- Bases de texto completo: Estas pueden almacenar el contenido completo de una publicación.
+
+\subsection{Modelos de Base de datos}
+BASE DE DATOS JERÁQUICAS: Almacenan su información en una estructura jerárquica, representando los datos en forma de árbol, donde un nodo padre de información puede tener varios hijos. Este modelo es bastante útil cuando la cantidad de información es pequeña.\\
+
+BASE DE DATOS EN RED: Los datos se representan como colecciones de registros y las relaciones entre los datos se representan mediante conjuntos, que son punteros de la implementación física. Este sistema permite que un nodo tenga más de un padre.\\
+
+BASE DE DATOS RELACIONAL: Se utiliza para modelar los problemas reales y administrar datos dinámicamente. \\
+
+BASE DE DATOS ORIENTADA A OBJETOS: Este modelo es uno de los más recientes, almacena en la base de datos tanto el estado como el comportamiento del objeto. Algunas de las propiedades de este modelo son: la encapsulación (Permite ocultar la información al resto de objetos, para impedir accesos incorrectos o conflictos); herencia (los objetos heredan comportamiento dentro de una jerarquía de clases) y poliformismo (permite que una operación pueda ser aplicada a distintos tipos de objetos). \\
+
+BASE DE DATOS DOCUMENTALES: Permite realizar diferentes actividades sobre el texto, una de las más importantes es la búsqueda de texto, que se puede realizar dentro de un documento.
+
+
+
