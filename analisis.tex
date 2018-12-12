@@ -1,0 +1,42 @@
+\section{ANALISIS}
+\subsection{Técnicas de seguridad}
+El mecanismo de seguridad de un SGBD debe incluir formas de restringir el acceso al sistema como un todo. Ésto, se denomina control de acceso y se pone en practicas creando cuentas de usuarios y contraseñas para que es SGBD controle el proceso de entrada al sistema.Otra técnica de seguridad es el cifrado de datos, que sirve paraproteger datos confidenciales que se transmiten por satélite o por algún otro tipo de red de comunicaciones. El cifrado provee protección adicional a secciones confidenciales de una base de datos. Los datos se codifican mediante algún algoritmo ex profeso. Un usuario no autorizado que tenga acceso a los datos codificados tendrá problemas para descifrarlos, pero un usuario autorizado contará con algoritmos (o claves) de codificación o descifrado para tal efecto. 
+
+\subsection{Los usuarios}
+Deberían tener varios tipos de autorización para diferentes partes de la base de datos. Destacan:\\
+- La autorización de lectura para la lectura de los datos,pero no su modificación.\\
+- La autorización de inserción para la inserción de datos nuevos, pero no la modificación de los existentes.\\
+- La autorización de actualización para la modificaciónde los datos, pero no su borrado.\\
+- La autorización de borrado para el borrado de los datos.
+ 
+\subsection{Prácticas de seguridad}
+IDENTIFIQUE SU SENSIBILIDAD: 
+Desarrolle o adquiera herramientas de identificación, asegurando éstas contra el malware, colocado en su base de datos el resultado de los ataques de inyección SQL; pues aparte de exponer información confidencial debido a vulnerabilidades, como la inyección SQL, también facilita a los atacantes incorporar otros ataques en el interior de la base de datos. \\
+
+EVALUACIÓN DE LA VULNERABILIDAD Y LA CONFIGURACIÓN:
+Esto incluye la verificación de la forma en que se instaló la base de datos y su sistema operativo (por ejemplo, la comprobación privilegios de grupos de archivo -lectura, escritura y ejecución- de base de datos y bitácoras de transacciones). \\
+
+Además, es necesario verificar que no se está ejecutando la base de datos con versiones que incluyen vulnerabilidades conocidas; así como impedir consultas SQL desde las aplicaciones o capa de usuarios. Para ello se pueden considerar (como administrador):\\
+- Limitar el acceso a los procedimientos a ciertos usuarios.\\
+- Delimitar el acceso a los datos para ciertos usuarios, procedimientos y/o datos.\\
+- Declinar la coincidencia de horarios entre usuarios que coincidan. \\
+
+ENDURECIMIENTO: 
+Como resultado de una evaluación de la vulnerabilidad a menudo se dan una serie de recomendaciones específicas. Estees el primer paso en el endurecimiento de la base de datos. Otros elementos de endurecimiento implican la eliminación detodas las funciones y opciones que se no utilicen. Aplique una política estricta sobre que se puede y que no se puede hacer, pero asegúrese de desactivar lo que no necesita. \\
+
+AUDITE: 
+Una vez creada la configuración y controles de endurecimiento, realice auto evaluaciones y seguimiento a las recomendaciones de auditoría para verificar la no desviación de su objetivo (la seguridad).Automatice el control de la configuración de tal forma que registre cualquier cambio en la misma e implemente alertas sobre cambios en ella. Cada vez que un cambio se realice, podría afectar a la seguridad de la base de datos.\\
+
+SUPERVISIÓN:
+Supervisión en tiempo real de la actividad de base de datos es clave para limitar su exposición, aplique o adquiera agentes inteligentes de monitoreo, detección de intrusiones y uso indebido.\\
+
+PISTAS DE AUDITORIA:
+Aplique pistas de auditoría y genere la trazabilidad de las actividades que afectan la integridad de los datos, o la visualización los datos sensibles. 
+
+
+
+
+
+
+
+
